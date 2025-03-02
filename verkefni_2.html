@@ -39,51 +39,109 @@
 
 						<!-- Content -->
 							<article class="box post">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+
+                                <a href="#" class="image featured"><img src="images/pusl3.jpg" alt="" /></a>
+
 								<header>
-									<h2>Verkefna Yfirlit</h2>
+									<h2>Verkefni 2 - Parametrísk hönnun og tölvustuddur skurður</h2>
 								</header>
                                 <header>
-										<h3>Verkefni 1</h3>
-								</header>
+                                    <h3>Vínylskurður</h3>
+                                </header>
 								<p>
-									Efnisgrein
+                                    Hluti af verkefni 2 var að vínylskera eitthvað út, þ.e.a.s. gera límmiða. Ég ákvað að gera límmiða af uppáhalds hljómsveitinni minni og setja hann á tölvuna mína. Fyrsta sem ég gerði var að ná í <a href="https://inkscape.org/" target="_blank">Inkscape</a> og finna góða mynd af því sem ég vildi búa til. Síðan afritaði ég myndina inn í Inkscape og gerði Trace Bitmap til að búa til vigra mynd. Síðan gerði ég Stroke to Path svo í fill and stroke stillingarnar og valdi no fill, flat color og 0.02mm í breidd í stroke style til að fá útlínurnar. Þegar það var allt komið þá var næsta skref að skera út límmiðan með vínylskeranum, til þess þarf að vista skjalið úr Inkscape sem svg.    
+                                    Hér má sjá hvernig þetta kom út:
 								</p>
-								<p>
-									Efnisgrein
-								</p>
+                                <span class="image left">
+                                    <img src="Images/gravediggaz2.jpg" alt="dope" style="width: 50%; height: auto;">
+                                </span>
+                                <p>
+                                    Til að nálgast Viðeigandi skrám smelltu á límmiða hnappinn:
+                                </p>
+								<a href="downloads/Gravediggaz.svg" class="pdf-box" target="_blank">
+                                    <div class="box-content">
+                                        <h3>Límmiði</h3>
+                                    </div>
+                                </a>
 								<section>
 									<header>
-										<h3>Verkefni 2</h3>
+										<h3>KERF-prófun</h3>
 									</header>
 									<p>
-										Efnisgrein
+										Hluti af geislaskurðar verkefninu var að gera KERF prófun, þ.e. mæli þykkt geislans. Þar sem ég ætlaði að notast við tvö efni þá þurfti ég að gera tvær KERf prófan, þ.e.a.s. eitt fyri svartan 3mm akríl og eitt fyrir glæran 2mm akríl. Sama teikning var notuð fyrir báðar prófaninar en hér má sjá teikninguna:
 									</p>
+                                <span class="image left">
+                                    <img src="Images/KERF.jpg" alt="dope" style="width: 50%; height: auto;">
+                                </span>
 									<p>
-										Efnisgrein
+										Síðan var þessi teikning vistuð sem dxf skrá og færð fyrir í Inkscape og sett línu breidd 0.02mm. Vert er að nefna að það er hægt að minnka teikninguna í Inkscape til að spara efni, sem var gert. Fyrir 3mm akrílinn þá var ég í samstarfi með <a href="https://html5up.net/" target="_blank">Guðmundi</a>, en hér má sjá niðurstöður mælinga og myndir:
 									</p>
-								</section>
-								<section>
-									<header>
-										<h3>Verkefni 3</h3>
-									</header>
-									<p>
-										Efnisgrein
+                                <span class="image left" style="display: flex; justify-content: left; align-items: center; gap: 20px;">
+                                    <img src="Images/KERF2_2.jpg" alt="dope" style="width: 40%; height: auto; display: inline-block;">
+                                    <img src="Images/KERF1.jpg" alt="dope" style="width: 40%; height: auto; display: inline-block;">
+                                </span>
+                                    <p>
+                                        Það var mælt að lengdin inn í rammanum var L_rammi = 104,1mm og heildar lengdin þegar kubbanir voru hliðin á hvor öðrum var L_kubbar = 101,65mm. Síðan til að finna KERF-ið þarf að finna mismuninn og deila með fjölda skurðar lína eða 14. Það fékkst að KERF-ið fyrir svarta 3mm akrílinn var 0.175mm.
+                                    </p>
+                                    <p>
+                                        Næsta skref var að finna KERF-ið fyrir glæra 2mm akrílinn en það var notað sömu aðferð og fyrir svarta 3mm akrílinn. Ég gerði þessa KERF prófun einn þar sem enginn annar var að notast við glæran 2mm akríl, en hér má sjá niðurstöður mælinga og myndir:
+                                    </p>
+                                    <span class="image center">
+                                        <img src="Images/KERF_2.jpg" alt="dope" style="width: 50%; height: auto;">
+                                    </span>
+                                    <p>
+                                        Það var mælt að lengdin inn í rammanum var L_rammi = 108,5mm og heildar lengdin þegar kubbanir voru hliðin á hvor öðrum var L_kubbar = 104,6mm. Síðan til að finna KERF-ið þarf að finna mismuninn og deila með fjölda skurðar lína eða 14. Það fékkst að KERF-ið fyrir svarta 3mm akrílinn var 0.279mm.
+                                    </p>
 								</section>
                                 <section>
 									<header>
-										<h3>Lokaverkefni</h3>
+										<h3>Parametrískt gernelgt módel</h3>
 									</header>
-									<p>
-										Efnisgrein
+                                    <p>
+                                        <i>Ég vill segja fyrst og fremst að ég er ekki að fara gefa upp lausnina á púslinu hér, ef einhver vill sjá hvort þetta virkar þá þarf sá aðili að reyna við púslið.</i>
+									</p>
+                                    <p>
+										Þar sem verkefnið snérust um það að hanna hlut sem ætti að smell passa saman, þá fannst mér það mjög góð hugmynd að gera óvenjulegt púsl sem væri ekki eins og klassísku púslin. Einnig fannst mér það passleg hugmynd þar sem verkefnið reynir á þau vandamál sem eiga sér stað þegar það er verið að geislaskera hluti, t.d. að finna KERF-ið og hvernig KERF-ið hefur áhrif á hvernig púslin myndu passa saman. Einnig hannaði ég og gerði tvíhliða bakka svo hægt væri að púsla saman púslið báðu megin á bakkanum. Öll hönnun og undirbúningur fyrir geislaskurð var gerður í Fusion, einnig var lagað skurðarferilinn í Inkscape.
+                                    </p>
+                                    <p>
+                                        Fyrsta skrefið var að hanna bakkan. Það var ekki erfitt að hanna bakkan en parametranir urðu frekar flóknir í endann, þar sem bakkinn þarf að hýsa púslið. Þ.e.a.s. þar sem púslið þurfti að vera parametrískt þá þarf að finna útfrá púslinu hvað bakkinn þarf að vera stór. Við hönnun á púslinu dróg ég innblástur frá öðru púsli sem heitir <a href="https://www.puzzlemaster.ca/browse/inventors/yuuasaka/12444-wave-7-puzzle-original-version" target="_blank">WAVE 7 PUZZLE</a>. Þegar ég var að hanna púslið þá vildi ég festa eina breytu fyrir stærð púslsins og ég ákvað að festa breiddina á einum púsl bita, og útfrá því væri hægt að leiða út hvað bakkinn á að vera stór.
+                                    </p>
+                                        <span class="image center">
+                                                <img src="Images/para.jpg" alt="dope" style="width: 60%; height: auto; display: inline-block;">
+                                        </span>
+                                    <span class="image left" style="display: flex; justify-content: left; align-items: center; gap: 20px;">
+                                        <img src="Images/bakki.jpg" alt="dope" style="width: 50%; height: auto; display: inline-block;">
+                                        <img src="Images/arrange.jpg" alt="dope" style="width: 50%; height: auto; display: inline-block;">
+                                    </span>
+                                    <p>
+                                        Næsta skref eftir að hönnun var komin var að prófa hvort gernlegta festingin sem ég hannaði myndi virka. Ég endaði örugglega í 6 prufum fyrir svarta 3mm akrýlinn þar sem þykktin á honum var svo breytileg. En eftir að fikta með KERF-ið og þykktinni í Fusion þá fékk ég loks prufu sem ég var ánægður og þá var næst að skera út bakkan. Þrátt fyrir prufuna sem heppnaðist mjög vel þá var ég ekki svo heppinn með bakkan en akrýlinn sprakk smá meðan ég var að setja þetta saman en hann heldur og er fastur. Fyrir glæra 2mm akrýlinn þá var þykktinn á honum ekki svona breytileg og með svarta akrýlinn, heldur var hann 2mm eins og hann átti að vera. Ég gerði ekki í rauninni prufu fyrir púsl bitana heldur skar ég út tvo bita sem ég vissi ættu að passa saman og við fyrstu tilraun þá smell pössuðu þeir svo ég skar restina af púsl bitunum út.  
+                                    </p>
+                                    <span class="image left" style="display: flex; justify-content: left; align-items: center; gap: 20px;">
+                                        <img src="Images/prufa_f.jpg" alt="dope" style="width: 50%; height: auto; display: inline-block;">
+                                        <img src="Images/prufa.jpg" alt="dope" style="width: 50%; height: auto; display: inline-block;">
+                                    </span>
+                                    <span class="image center">
+                                        <img src="Images/pusl3.jpg" alt="dope" style="width: 100%; height: auto;">
+                                    </span>
+                                    <header>
+                                        <h3>Skjöl</h3>
+                                    </header>
+                                    <a href="downloads/P%C3%BAsl%20og%20Bakki.f3d" class="pdf-box" target="_blank">
+                                        <div class="box-content">
+                                            <h3>Púsl og Bakki</h3>
+                                        </div>
+                                    </a>
+                                    <p></p>
+                                    <a href="downloads/KERF%20Pr%C3%B3f.f3d" class="pdf-box" target="_blank">
+                                        <div class="box-content">
+                                            <h3>KERF Próf</h3>
+                                        </div>
+                                    </a>
+                                    <p>
+                                        Einnig er hægt að nálgast skjölin inn á <a href="https://www.thingiverse.com/thing:6963474" target="_blank">Thingiverse</a>
+                                    </p>
 								</section>
-                                <section>
-									<header>
-										<h3>Um Mig</h3>
-									</header>
-									<p>
-										Efnisgrein
-								</section>
+
 							</article>
 
 					</div>
